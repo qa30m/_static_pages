@@ -1,0 +1,144 @@
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+}
+body {
+    background-color: antiquewhite;
+    font-family: Helvetica, sans-serif;
+}
+/* header styles */
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3%;
+    position: fixed;
+    top: 0;
+    width: 94%;
+    background-color: antiquewhite;
+}
+header .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color:rgba(97, 89, 89, 0.973);
+}
+header .logo .fas {
+    font-size: 2rem;
+}
+.logo h1 {
+    margin-left: 10px;
+}
+#nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+#nav-bar li {
+    display: block;
+    margin: 0 1rem;
+    padding: .4rem;
+    font-size: 20px;
+}
+#nav-bar a {
+    text-decoration: none;
+}
+#nav-bar a {
+    color: black;
+}
+/* main styles */
+/* newsletter section */
+main {
+    margin-top: 70px;
+}
+section {
+    margin: 50px 0;
+}
+#newsletter #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#newsletter {
+    margin-top: 100px;
+}
+#newsletter * {
+    margin-top: 1rem;
+}
+#newsletter #form label {
+    font-size: 1.4rem;
+}
+#newsletter input {
+    font-size: 1rem;
+    padding: 3px;
+    text-align: center;
+    min-width: 280px;
+}
+#newsletter button {
+    background-color:goldenrod;
+    padding: 5px 12px;
+    font-size: 1.1rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+/* features section */
+#features {
+    display: grid;
+    grid-template-columns: 1fr 4fr 10fr 1fr;
+    justify-content: start;
+    margin-top: 100px;
+    row-gap: 50px;
+}
+#features .icon {
+    color: goldenrod;
+    display: grid;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: center;
+}
+#features .desc {
+    padding-right: 40px;
+    grid-column: 3/4;
+}
+/* how it works */
+#how-it-works {
+    display: flex;
+    justify-content: center;
+}
+/* prices section */
+#prices {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+#prices .item {
+    border: 1px solid black;
+}
+#prices .item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding: 20px 0;
+}
+#prices .item-name{
+    padding: 10px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+@media only screen and (max-width: 1000px) {
+    #prices {
+        grid-template-columns: repeat(2, 300px);
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Survey Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Product usage survey</h1>
+      <p id="description">Please let us know your oppinion about this product</p>
+    </header>
+    <form id="survey-form">
+      <fieldset>
+        <div class="form-group">
+          <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required /></label>
+        </div>
+        <div class="form-group">
+          <label id="email-label">Email: <input type="email" id="email" placeholder="Enter your email" required /></label>
+        </div>
+        <div class="form-group">
+          <label id="number-label">From 1 to 10 how satisfied are with our product: <input type="number" id="number" placeholder="optional" min="0" max="10" /></label>
+        </div>
+        <div class="form-group">
+          <label>Would you recommend this product to others?
+            <select id="dropdown">
+              <option value="">Choose (optional)</option>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Gender:</p>
+          <label><input class="inline" type="radio" name="gender" class="inline" value="0"> Male</label>
+          <label><input type="radio" name="gender" class="inline" value="1"> Female</label>
+        </div>
+        <div class="form-group">
+          <label><input type="checkbox" name="rec-prod" class="inline" value="1" /> Recieve recommended products emails</label>
+          <label><input type="checkbox" name="security-alerts" class="inline" value="1" /> Recieve security alerts</label>
+        </div>
+        <div class="form-group">
+          <label>Comment: <textarea rows="3" cols="30" name="comment" placeholder="Other comments..."></textarea></label>
+        </div>
+        <div class="form-group">
+          <input type="submit" name="Submit" id="submit" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
